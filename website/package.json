@@ -1,0 +1,10 @@
+{
+  "name": "bulldog-steel-fabrications-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "echo 'no lint for static build'",
+    "build": "echo 'static build - no build step'"
+  }
+}
