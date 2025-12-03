@@ -93,6 +93,18 @@ input, textarea { width: 100%; padding: 12px 14px; border-radius: 10px; border: 
 input:focus, textarea:focus { outline: 2px solid var(--accent-2); border-color: var(--accent-2); }
 textarea { min-height: 120px; resize: vertical; }
 
+.team-hero h1 { margin-bottom: 10px; }
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.profile-card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; box-shadow: var(--shadow); display: grid; gap: 10px; }
+.profile-top { display: flex; align-items: center; gap: 10px; }
+.avatar { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #0b0f18; background: radial-gradient(circle at 30% 30%, var(--accent), var(--accent-2)); }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.04); font-size: 13px; color: var(--muted); }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-list { display: grid; gap: 6px; }
+.tag-list small { color: var(--muted); }
+.profile-card h3 { margin: 0; }
+
 @media (max-width: 720px) {
   nav { flex-wrap: wrap; gap: 12px; }
   .nav-links { width: 100%; justify-content: flex-start; flex-wrap: wrap; }
