@@ -72,6 +72,8 @@ header {
 .btn:hover, .btn:focus { color: var(--text); border-color: var(--border); background: #fff; box-shadow: var(--shadow); }
 .btn-outline { background: transparent; box-shadow: none; }
 .btn-outline:hover, .btn-outline:focus { background: transparent; color: var(--text); border-color: var(--border); box-shadow: none; }
+.cta { background: var(--accent); color: #fff !important; border-color: var(--accent); }
+.cta:hover, .cta:focus { background: var(--accent); color: #fff !important; border-color: var(--accent); box-shadow: var(--shadow); }
 
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
