@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://bulldogsteelfabrications.net/</loc></url>
-  <url><loc>https://bulldogsteelfabrications.net/services.html</loc></url>
-  <url><loc>https://bulldogsteelfabrications.net/portfolio.html</loc></url>
-  <url><loc>https://bulldogsteelfabrications.net/about.html</loc></url>
+  <url><loc>https://bulldogsteelfabrications.net/products.html</loc></url>
+  <url><loc>https://bulldogsteelfabrications.net/gallery.html</loc></url>
+  <url><loc>https://bulldogsteelfabrications.net/team.html</loc></url>
+  <url><loc>https://bulldogsteelfabrications.net/blogs.html</loc></url>
   <url><loc>https://bulldogsteelfabrications.net/contact.html</loc></url>
 </urlset>
