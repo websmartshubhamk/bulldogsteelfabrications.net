@@ -45,6 +45,7 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .nav-links { display: flex; gap: 16px; }
 .nav-links a { padding: 8px 12px; border-radius: 10px; transition: 0.2s ease; color: var(--text); }
 .nav-links a:hover { background: rgba(43,108,176,0.12); color: #fff; }
+.nav-links a.active { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f18 !important; font-weight: 700; box-shadow: var(--shadow); }
 .cta { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f18 !important; font-weight: 700; box-shadow: var(--shadow); }
 
 .hero { padding: 64px 0 40px; display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: center; }
@@ -68,7 +69,8 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; align-items: center; }
 .highlight { background: linear-gradient(145deg, rgba(43,108,176,0.12), rgba(212,167,58,0.12)); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
 .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
-.list li { display: flex; gap: 10px; color: var(--muted); }
+.list li { display: flex; gap: 10px; color: var(--muted); position: relative; padding-left: 14px; }
+.list li::before { content: '•'; position: absolute; left: 0; color: var(--accent); }
 .badge { display: inline-block; padding: 6px 10px; border-radius: 10px; background: rgba(212,167,58,0.18); color: var(--text); border: 1px solid rgba(212,167,58,0.25); margin: 0 8px 8px 0; }
 
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 12px; }

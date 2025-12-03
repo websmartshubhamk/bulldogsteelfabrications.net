@@ -4,7 +4,7 @@ function initNav() {
   links.forEach(link => {
     const href = link.getAttribute('href');
     if (href === path || (!path && href === 'index.html')) {
-      link.classList.add('cta');
+      link.classList.add('active');
     }
   });
 }
