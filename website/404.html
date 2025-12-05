@@ -12,30 +12,57 @@
   <div class="topbar">
     <div class="container topbar-inner">
       <div class="topbar-left">
-        <span class="dot"></span>
-        <a href="tel:01767681627">01767 681627</a>
+        <a class="top-link" href="tel:01767681627">
+          <span class="icon-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 3.75A1.25 1.25 0 0 1 5.75 2.5h2.5A1.25 1.25 0 0 1 9.5 3.75v2.5c0 .2-.05.4-.14.58l-1.04 2.08a.75.75 0 0 0 .03.7 12.5 12.5 0 0 0 6.54 6.54.75.75 0 0 0 .7.03l2.08-1.04c.18-.09.38-.14.58-.14h2.5A1.25 1.25 0 0 1 21.5 15.5v2.75a1.25 1.25 0 0 1-1.25 1.25h-.5A15.25 15.25 0 0 1 3.5 4v-.25A1.25 1.25 0 0 1 4.75 2.5h-.25z" fill="currentColor"></path></svg>
+          </span>
+          <span>01767 681627</span>
+        </a>
         <span class="divider">|</span>
-        <a href="mailto:info@bulldogsteel.co.uk">info@bulldogsteel.co.uk</a>
+        <a class="top-link" href="mailto:info@bulldogsteel.co.uk">
+          <span class="icon-circle" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 5.75A2.25 2.25 0 0 1 6.75 3.5h10.5A2.25 2.25 0 0 1 19.5 5.75v12.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 18.25zM6 7.4v9.1c0 .41.34.75.75.75h10.5c.41 0 .75-.34.75-.75V7.4l-5.53 3.24a1.75 1.75 0 0 1-1.74 0zM17.25 5H6.75c-.23 0-.42.16-.48.37l-.02.13 5.7 3.35a.25.25 0 0 0 .24 0l5.7-3.35a.5.5 0 0 0-.35-.5z" fill="currentColor"></path></svg>
+          </span>
+          <span>info@bulldogsteel.co.uk</span>
+        </a>
       </div>
       <div class="topbar-right">
-        <a class="toplink" href="index.html">Back to site</a>
-        <a class="btn-sm" href="contact.html">Contact us for a quote</a>
+        <span class="top-pill">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7.5A1.5 1.5 0 0 1 5.5 6h13A1.5 1.5 0 0 1 20 7.5v10a.5.5 0 0 1-.5.5H18v1.25a.75.75 0 0 1-1.2.6l-2.3-1.85H9.5A1.5 1.5 0 0 1 8 16.5zM18.5 8h-13a.5.5 0 0 0-.5.5v8h5.5c.17 0 .34.06.48.17l1.77 1.42.75.6V16.5a.5.5 0 0 1 .5-.5H19V8.5a.5.5 0 0 0-.5-.5zM7 4.75A.75.75 0 0 1 7.75 4h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 7 4.75z" fill="currentColor"></path></svg>
+          <span>Serving the UK since 1999</span>
+        </span>
       </div>
     </div>
   </div>
   <div class="container">
     <nav class="main-nav">
-      <div class="brand">
+      <a class="brand" href="index.html">
         <img src="assets/images/logo-bulldog-steel.webp" alt="Bulldog Steel Fabrications logo" />
         <span>Bulldog Steel Fabrications</span>
-      </div>
+      </a>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="team.html">Meet The Team</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="contact.html">Contact Us</a>
+        <a class="nav-link" data-nav-target="index.html" href="index.html">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5a.75.75 0 0 1 .47.17l7 5.75a.75.75 0 0 1-.94 1.16L18.5 9.7V18a1.75 1.75 0 0 1-1.75 1.75h-2a.75.75 0 0 1-.75-.75v-3.5a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75V19a.75.75 0 0 1-.75.75h-2A1.75 1.75 0 0 1 5.5 18V9.7l-1.03.81a.75.75 0 1 1-.94-1.16l7-5.75A.75.75 0 0 1 12 3.5z" fill="currentColor"></path></svg>
+          <span>Home</span>
+        </a>
+        <div class="dropdown" data-dropdown>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" data-nav-target="products.html">
+            <span>Products</span>
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6.75 9.25 5.25 5.5 5.25-5.5a.75.75 0 1 1 1.08 1.04l-5.78 6.05a1.25 1.25 0 0 1-1.82 0L5.67 10.3a.75.75 0 0 1 1.08-1.05z" fill="currentColor"></path></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="products.html#cabin-staircases">Cabin Staircases</a>
+            <a href="products.html#steel-steps">Steel Steps</a>
+            <a href="products.html#effluent-tanks">Effluent Tanks</a>
+            <a href="products.html#bespoke-tanks">Bespoke Tanks</a>
+            <a href="products.html#ramps">Ramps</a>
+            <a href="products.html#additional-items">Additional Items</a>
+          </div>
+        </div>
+        <a class="nav-link" data-nav-target="gallery.html" href="gallery.html">Gallery</a>
+        <a class="nav-link" data-nav-target="team.html" href="team.html">Meet The Team</a>
+        <a class="nav-link" data-nav-target="blogs.html" href="blogs.html">Blogs</a>
+        <a class="nav-link" data-nav-target="contact.html" href="contact.html">Contact Us</a>
       </div>
     </nav>
   </div>
@@ -108,6 +135,7 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
