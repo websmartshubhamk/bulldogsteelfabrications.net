@@ -9,19 +9,32 @@
 </head>
 <body id="top">
 <header>
-  <div class=\"container\">
-    <nav class=\"main-nav\">
-      <a class=\"brand\" href=\"index.html\">
-        <img src=\"assets/images/logo-bulldog-steel.webp\" alt=\"Bulldog Steel Fabrications logo\" />
+  <div class="container">
+    <nav class="main-nav">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo-bulldog-steel.webp" alt="Bulldog Steel Fabrications logo" />
         <span>Bulldog Steel Fabrications</span>
       </a>
-      <div class=\"nav-links\">
-        <a class=\"nav-link\" data-nav-target=\"index.html\" href=\"index.html\">Home</a>
-        <a class=\"nav-link\" data-nav-target=\"products.html\" href=\"products.html\">Products</a>
-        <a class=\"nav-link\" data-nav-target=\"gallery.html\" href=\"gallery.html\">Gallery</a>
-        <a class=\"nav-link\" data-nav-target=\"team.html\" href=\"team.html\">Meet The Team</a>
-        <a class=\"nav-link\" data-nav-target=\"blogs.html\" href=\"blogs.html\">Blogs</a>
-        <a class=\"nav-link\" data-nav-target=\"contact.html\" href=\"contact.html\">Contact Us</a>
+      <div class="nav-links">
+        <a class="nav-link" data-nav-target="index.html" href="index.html">Home</a>
+        <div class="dropdown" data-dropdown>
+          <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" data-nav-target="products.html">
+            <span>Products</span>
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6.75 9.25 5.25 5.5 5.25-5.5a.75.75 0 1 1 1.08 1.04l-5.78 6.05a1.25 1.25 0 0 1-1.82 0L5.67 10.3a.75.75 0 0 1 1.08-1.05z" fill="currentColor"></path></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="products.html#cabin-staircases">Cabin Staircases</a>
+            <a href="products.html#steel-steps">Steel Steps</a>
+            <a href="products.html#effluent-tanks">Effluent Tanks</a>
+            <a href="products.html#bespoke-tanks">Bespoke Tanks</a>
+            <a href="products.html#ramps">Ramps</a>
+            <a href="products.html#additional-items">Additional Items</a>
+          </div>
+        </div>
+        <a class="nav-link" data-nav-target="gallery.html" href="gallery.html">Gallery</a>
+        <a class="nav-link" data-nav-target="team.html" href="team.html">Meet The Team</a>
+        <a class="nav-link" data-nav-target="blogs.html" href="blogs.html">Blogs</a>
+        <a class="nav-link" data-nav-target="contact.html" href="contact.html">Contact Us</a>
       </div>
     </nav>
   </div>
@@ -94,6 +107,7 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
 
 
 
