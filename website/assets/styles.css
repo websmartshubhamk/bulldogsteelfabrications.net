@@ -72,6 +72,8 @@ header {
   background: transparent;
   cursor: pointer;
   font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.2;
 }
 .nav-link:hover, .dropdown-toggle:hover { color: var(--accent); background: rgba(246,146,30,0.08); }
 .nav-link.active, .dropdown-toggle.active {
