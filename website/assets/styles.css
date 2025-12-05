@@ -27,7 +27,7 @@ body {
 img { max-width: 100%; display: block; }
 a { color: var(--text); text-decoration: none; }
 
-.container { width: min(1200px, 92%); margin: 0 auto; }
+.container { width: min(1400px, 96%); margin: 0 auto; }
 
 .topbar {
   background: linear-gradient(90deg, #e0601a, #f6921e);
@@ -145,7 +145,7 @@ header {
 .gallery img { width: 100%; height: 170px; object-fit: cover; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow); }
 
 .footer { border-top: 1px solid var(--border); padding: 48px 0 56px; background: #0f1928; color: #d9e2f2; }
-.footer .container { width: min(1400px, 94%); margin: 0 auto; }
+.footer .container { width: min(1400px, 96%); margin: 0 auto; }
 .footer a { color: #d9e2f2; }
 .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 24px; align-items: start; }
 .footer small { color: #b7c4db; display: block; }
