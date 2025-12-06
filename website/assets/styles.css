@@ -169,7 +169,12 @@ header {
 .feature-bullets li { display: inline-flex; align-items: center; gap: 10px; color: var(--muted); font-weight: 600; }
 .feature-bullets .icon { width: 22px; height: 22px; display: inline-flex; align-items: center; justify-content: center; color: var(--accent); }
 
-.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  grid-auto-rows: 1fr;
+}
 .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
 .card h3 { margin: 8px 0 6px; color: var(--text); }
 .card p { color: var(--muted); margin: 0; }
