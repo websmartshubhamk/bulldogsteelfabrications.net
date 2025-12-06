@@ -53,19 +53,44 @@
     </div>
   </section>
 
-  <section class="section container grid-2">
+  <section class="section container contact-grid">
     <div>
       <h2>Contact form</h2>
-      <form class="contact-form" action="https://formsubmit.co/info@bulldogsteel.co.uk" method="POST">
-        <input type="text" name="name" placeholder="Full name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <input type="tel" name="phone" placeholder="Phone" />
-        <textarea name="project" placeholder="Project details (scope, material, size, location, timeline)" required></textarea>
-        <button class="btn cta" type="submit">Send request</button>
-        <input type="hidden" name="_subject" value="New quote request from bulldogsteelfabrications.net" />
-        <input type="hidden" name="_captcha" value="false" />
-      </form>
-      <small style="color: var(--muted); display:block; margin-top:10px;">For best results, attach drawings/specs when you email.</small>
+      <div class="form-card">
+        <form class="contact-form" action="https://formsubmit.co/info@bulldogsteel.co.uk" method="POST">
+          <div class="field-row">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" placeholder="e.g., Jane Smith" required />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <div class="field-row">
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" placeholder="Optional: 01767 681627" />
+            </label>
+            <label class="field">
+              <span>Site address</span>
+              <input type="text" name="site" placeholder="Project location or postcode" />
+            </label>
+          </div>
+          <label class="field">
+            <span>Project details</span>
+            <textarea name="project" placeholder="Scope, materials, sizes, coatings, timeline, delivery needs" required></textarea>
+          </label>
+          <div class="actions">
+            <button class="btn cta" type="submit">Send request</button>
+            <small class="hint">We typically respond within one business day.</small>
+          </div>
+          <input type="hidden" name="_subject" value="New quote request from bulldogsteelfabrications.net" />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+        <small class="hint">For best results, attach drawings/specs when you email.</small>
+      </div>
     </div>
     <div class="highlight">
       <h3>Direct contacts</h3>
@@ -152,8 +177,6 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
 
 
 
