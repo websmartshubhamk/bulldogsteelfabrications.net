@@ -171,13 +171,25 @@ header {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   grid-auto-rows: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
-.card h3 { margin: 8px 0 6px; color: var(--text); }
-.card p { color: var(--muted); margin: 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 320px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.card h3 { margin: 8px 0 6px; color: var(--text); word-wrap: break-word; hyphens: auto; }
+.card p { color: var(--muted); margin: 0; word-wrap: break-word; hyphens: auto; }
 
 .section { padding: 56px 0; }
 .section h2 { margin: 0 0 12px; font-size: 30px; color: var(--text); }
