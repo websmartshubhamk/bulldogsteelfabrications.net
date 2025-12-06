@@ -53,56 +53,81 @@
     </div>
   </section>
 
-  <section class="section container contact-grid">
-    <div class="contact-main">
-      <h2>Contact form</h2>
-      <div class="form-card">
-        <form class="contact-form" action="https://formsubmit.co/info@bulldogsteel.co.uk" method="POST">
-          <div class="field-row">
-            <label class="field">
-              <span>Full name</span>
-              <input type="text" name="name" placeholder="e.g., Jane Smith" required />
-            </label>
-            <label class="field">
-              <span>Email</span>
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-          </div>
-          <div class="field-row">
-            <label class="field">
-              <span>Phone</span>
-              <input type="tel" name="phone" placeholder="Optional: 01767 681627" />
-            </label>
-            <label class="field">
-              <span>Site address</span>
-              <input type="text" name="site" placeholder="Project location or postcode" />
-            </label>
-          </div>
-          <label class="field">
-            <span>Project details</span>
-            <textarea name="project" placeholder="Scope, materials, sizes, coatings, timeline, delivery needs" required></textarea>
-          </label>
-          <div class="actions">
-            <button class="btn cta" type="submit">Send request</button>
-            <small class="hint">We typically respond within one business day.</small>
-          </div>
-          <input type="hidden" name="_subject" value="New quote request from bulldogsteelfabrications.net" />
-          <input type="hidden" name="_captcha" value="false" />
-        </form>
-        <small class="hint">For best results, attach drawings/specs when you email.</small>
+  <section class="section container contact-layout">
+    <div class="contact-card info-card">
+      <h3>Get In Touch</h3>
+      <div class="info-block">
+        <div class="label">Our Location</div>
+        <div class="value">Grange Nurseries, Beeston Green<br/>Sandy, Bedfordshire<br/>SG19 1PG, United Kingdom</div>
+      </div>
+      <div class="info-block">
+        <div class="label">Phone</div>
+        <div class="value"><a href="tel:01767681627">01767 681627</a></div>
+      </div>
+      <div class="info-block">
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:info@bulldogsteel.co.uk">info@bulldogsteel.co.uk</a></div>
+      </div>
+      <div class="info-block">
+        <div class="label">Business Hours</div>
+        <div class="value">
+          Monday - Friday: 8:00 AM - 5:00 PM<br/>
+          Saturday: 8:00 AM - 12:00 PM<br/>
+          Sunday: Closed
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="label">Service Areas</div>
+        <div class="value">We provide steel fabrication services and delivery across the United Kingdom. Ask to discuss delivery to your location.</div>
       </div>
     </div>
-    <div class="highlight contact-card">
-      <h3>Direct contacts</h3>
-      <table class="table">
-        <tr><td>Phone</td><td><a href="tel:01767681627">01767 681627</a></td></tr>
-        <tr><td>Email</td><td><a href="mailto:info@bulldogsteel.co.uk">info@bulldogsteel.co.uk</a></td></tr>
-        <tr><td>Areas</td><td>UK projects; ask for availability.</td></tr>
-        <tr><td>Services</td><td>Fabrication, welding, install, stairs, rails, mezzanines.</td></tr>
-      </table>
-    </div>
-    <div class="section-image contact-image">
-      <img src="assets/images/staircase-fabrication-03.jpg" alt="Finished staircase installation" />
+
+    <div class="contact-card form-card">
+      <h3>Request a Quote</h3>
+      <form class="contact-form" action="https://formsubmit.co/info@bulldogsteel.co.uk" method="POST">
+        <div class="field-row">
+          <label class="field">
+            <span>Full name *</span>
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label class="field">
+            <span>Email address *</span>
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+        </div>
+        <div class="field-row">
+          <label class="field">
+            <span>Phone number</span>
+            <input type="tel" name="phone" placeholder="Your phone number" />
+          </label>
+          <label class="field">
+            <span>Company name</span>
+            <input type="text" name="company" placeholder="Your company name" />
+          </label>
+        </div>
+        <label class="field">
+          <span>Project type</span>
+          <select name="project-type">
+            <option value="">Select a project type</option>
+            <option>Cabin staircases</option>
+            <option>Steel steps</option>
+            <option>Effluent tanks</option>
+            <option>Bespoke tanks</option>
+            <option>Ramps</option>
+            <option>Other steel fabrication</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Project details *</span>
+          <textarea name="project" placeholder="Describe your project requirements, dimensions, quantities, coatings, any specific features needed..." required></textarea>
+        </label>
+        <div class="actions">
+          <button class="btn cta" type="submit">Send Enquiry</button>
+          <small class="hint">* Required fields. We typically respond within 24 hours.</small>
+        </div>
+        <input type="hidden" name="_subject" value="New quote request from bulldogsteelfabrications.net" />
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
     </div>
   </section>
 </main>
@@ -177,7 +202,6 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
 
 
 
