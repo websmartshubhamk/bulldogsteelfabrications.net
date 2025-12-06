@@ -213,6 +213,7 @@ header {
 
 .hero-visual { position: relative; }
 .hero-visual img { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.hero-shot img { max-height: 320px; object-fit: cover; }
 .hero-chip { position: absolute; bottom: 12px; left: 12px; background: rgba(255,255,255,0.9); padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); color: var(--text); }
 
 .hero-banner {
