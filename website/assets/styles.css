@@ -251,9 +251,33 @@ header {
 
 .form-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
 .contact-form { display: grid; gap: 16px; }
-.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; align-items: start; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "form card"
+    "form image";
+  gap: 24px;
+  align-items: start;
+}
+.contact-main { grid-area: form; }
+.contact-card { grid-area: card; background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow); }
+.contact-image { grid-area: image; align-self: stretch; }
+.contact-image img { height: 100%; min-height: 280px; object-fit: cover; border-radius: var(--radius); }
 .contact-grid .highlight { background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow); }
 .contact-grid .section-image img { height: 100%; min-height: 260px; object-fit: cover; }
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "form"
+      "card"
+      "image";
+  }
+  .contact-image img { height: auto; min-height: 220px; }
+}
 .contact-form .field-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
 .contact-form .field { display: grid; gap: 6px; color: var(--text); font-weight: 700; font-size: 14px; }
 input, textarea { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); background: #fff; color: var(--text); font-size: 15px; }
