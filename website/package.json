@@ -6,5 +6,8 @@
     "start": "npx serve .",
     "lint": "echo 'no lint for static build'",
     "build": "echo 'static build - no build step'"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0"
   }
 }
