@@ -62,4 +62,24 @@ function initDropdowns() {
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initDropdowns();
+
+  // Back to Top FAB appears near page bottom
+  const fab = document.createElement('button');
+  fab.className = 'back-to-top-fab';
+  fab.setAttribute('type', 'button');
+  fab.setAttribute('aria-label', 'Back to top');
+  fab.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline><line x1="12" y1="9" x2="12" y2="21"></line></svg><span>Back to Top</span>';
+  document.body.appendChild(fab);
+
+  const toggleFab = () => {
+    const nearBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200;
+    fab.classList.toggle('visible', nearBottom);
+  };
+
+  fab.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  window.addEventListener('scroll', toggleFab, { passive: true });
+  toggleFab();
 });
