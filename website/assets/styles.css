@@ -207,6 +207,7 @@ header {
 .back-to-top { color: #ffb347; font-weight: 700; }
 .footer-credit { font-size: 13px; color: #97a4bd; text-align: center; margin-top: 12px; }
 .footer-tagline { color: #aab4c8; }
+.footer-bottom .back-to-top { display: none; }
 .footer-icon { width: 20px; height: 20px; display: inline-flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
 .footer-icon svg { width: 16px; height: 16px; }
 
