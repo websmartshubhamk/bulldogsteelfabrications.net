@@ -256,8 +256,8 @@ header {
   grid-template-columns: 1.1fr 0.9fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
-    "form card"
-    "form image";
+    "form image"
+    "form card";
   gap: 24px;
   align-items: start;
 }
